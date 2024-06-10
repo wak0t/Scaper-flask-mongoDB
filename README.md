@@ -1,36 +1,41 @@
-# Scraper Projekt
+# Scraper Project
 
-## Opis
-Scraper jest aplikacją Flask, która umożliwia użytkownikom skrapowanie danych z eBay i zapisywanie ich w bazie danych MongoDB. Umożliwia również filtrowanie wyników na podstawie ceny i sortowania.
+## Description
+Scraper is a Flask application that allows users to scrape data from eBay and store it in a MongoDB database. It also enables filtering of results based on price and sorting options.
 
-## Funkcje
-- Skrapowanie danych z eBay.
-- Zapisywanie wyników w MongoDB.
-- Filtrowanie wyników po cenie i sortowaniu.
+## Features
+- Scraping data from eBay.
+- Saving results in MongoDB.
+- Filtering results by price and sorting.
 
-## Technologie
+## Technologies
 - Python
 - Flask
 - MongoDB
 - BeautifulSoup
 
-## Instalacja
-Aby uruchomić projekt lokalnie, wykonaj następujące kroki:
+## Installation
+To run the project locally, follow these steps:
 
-1. Sklonuj repozytorium:
+1. Clone the repository:
 
-git clone [URL_REPOZYTORIUM]
+git clone https://github.com/wak0t/Scraper-flask-mongoDB
 
-2. Zainstaluj zależności:
+2. Install dependencies:
 
 pip install -r requirements.txt
 
-3. Uruchom serwer Flask:
+3. Start the Flask server:
 
-python run.py / py run.py
+python run.py
 
-## Licencja
-Projekt jest udostępniany na licencji MIT. Szczegóły znajdziesz w pliku `LICENSE`.
+or
 
-## Autor
-	wak0t & amelkadrajwerka
+py run.py
+
+## License
+The project is made available under the MIT License. Details can be found in the `LICENSE` file.
+
+## Authors
+- wak0t
+- amelkadrajwerka
