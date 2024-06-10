@@ -33,4 +33,5 @@ python run.py / py run.py
 Projekt jest udostępniany na licencji MIT. Szczegóły znajdziesz w pliku `LICENSE`.
 
 ## Autor
-	wak0t
+	wak0t & amelkadrajwerka
+ 
