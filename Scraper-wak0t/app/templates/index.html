@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scraper</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Scraper</h1>
+        <form class="scraper-form" method="POST" action="{{ url_for('index') }}">
+            {{ form.hidden_tag() }}
+            <div class="form-group">
+                {{ form.query.label }} {{ form.query(class_='form-control') }}
+            </div>
+            <div class="form-group">
+                {{ form.min_price.label }} {{ form.min_price(class_='form-control') }}
+            </div>
+            <div class="form-group">
+                {{ form.max_price.label }} {{ form.max_price(class_='form-control') }}
+            </div>
+            <div class="form-group">
+                {{ form.sort_order.label }} {{ form.sort_order(class_='form-control') }}
+            </div>
+            <div class="form-group">
+                {{ form.free_shipping.label }} {{ form.free_shipping(class_='form-check-input') }}
+            </div>
+            <div class="form-group">
+                {{ form.exclude_price_range.label }} {{ form.exclude_price_range(class_='form-check-input') }}
+            </div>
+            <div class="form-group">
+                {{ form.submit(class_='btn-submit') }}
+            </div>
+        </form>
+
+        <div class="navigation-button">
+            <a href="{{ url_for('select_collection') }}" class="btn-results">Results</a>
+        </div>
+    </div>
+</body>
+</html>

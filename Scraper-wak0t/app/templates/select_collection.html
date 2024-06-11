@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Select Collection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+<div class="select-collection-container">
+    <h1>Select Collection</h1>
+    <ul>
+        {% for collection in collections %}
+            <li><a href="{{ url_for('results', collection_name=collection) }}">{{ collection }}</a></li>
+        {% endfor %}
+    </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,357 @@
+body {
+    background-image: url('/static/zdj.jpg') !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+    background-repeat: no-repeat !important;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Zapewnia, że cała strona zajmuje pełną wysokość */
+}
+
+.container {
+    width: 80%; /* Zwiększenie szerokości */
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    margin: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrowanie zawartości kontenera */
+}
+
+.scraper-form button,
+#submit {
+    text-align: center;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+}
+.scraper-form button:hover,
+#submit:hover {
+    background-color: #d555ff;
+}
+
+form {
+    text-align: center;
+    font-size:20px;
+}
+
+h1, h2 {
+    color: #dec4ff;
+    text-align: center;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scraper-form .form-group {
+    margin-bottom: 15px;
+}
+
+.scraper-form .form-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.scraper-form .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.scraper-form label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.scraper-form input,
+.scraper-form select {
+    margin: 5px 0 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 80%;
+    font-size: 1.2em;
+    background-color: #333;
+    color: #fff;
+}
+
+.scraper-form input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+.scraper-form button {
+    background-color: #007bff;
+    color: white;
+    padding: 20px 100px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    width: 80%;
+    max-width: 500px;
+    height: 60px;
+    text-align: center;
+}
+
+.scraper-form button:hover {
+    background-color: #0056b3;
+}
+
+.results {
+    margin-top: 20px;
+}
+
+.result-item {
+    background-color: #222;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #444;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.result-item h3 {
+    margin: 0;
+    color: #6c28b4;
+    font-size: 25px;
+}
+
+.result-item p {
+    margin: 0;
+    color: rgb(210, 163, 255);
+    font-size: 20px;
+}
+
+.result-item a {
+    color: #aaa;
+    text-decoration: none;
+}
+
+.result-item a:hover {
+    text-decoration: underline;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.result-item h5 a:hover {
+    text-decoration: underline;
+}
+
+.result-item h5 {
+    margin: 0 0 10px;
+    font-size: 18px;
+}
+
+.result-item h5 a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.scraper-form input[type="checkbox"] {
+    transform: scale(1.75);
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.results-button,
+.back-button,
+.navigation-button {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+.results-button .btn,
+.back-button .btn,
+.navigation-button .btn {
+    background-color: #413e44;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.results-button .btn:hover,
+.back-button .btn:hover,
+.navigation-button .btn:hover {
+    background-color: #bf00ff;
+}
+
+.scraper-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrowanie formularza */
+}
+
+.form-group {
+    width: 100%; /* Zapewnia, że grupa formularza zajmuje pełną szerokość */
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+        overflow: hidden; /* Zapobiega wychodzeniu poza kontener */
+    padding: 5px 0; /* Dodanie paddingu dla lepszego rozmieszczenia */
+}
+
+.form-control, .btn-submit {
+    flex-grow: 1;
+    width: 65%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1em;
+    background-color: #333;
+    color: #fff;
+     margin-top: 20px;
+}
+
+.btn-submit{
+     margin-top: 20px;
+
+}
+
+.checkbox-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Zapewnienie pionowego wyrównania */
+    width: 100%;
+    margin: 10px 0; /* Dodajemy marginesy, aby uniknąć nachodzenia na inne elementy */
+}
+
+.checkbox-label {
+    flex: 1; /* Daje każdemu label równą przestrzeń */
+    text-align: right; /* Tekst wyświetlany po prawej stronie */
+    margin-right: 10px; /* Odstęp pomiędzy tekstem a checkboxem */
+    color: white; /* Upewniamy się, że tekst jest widoczny na ciemnym tle */
+}
+
+.checkbox-input {
+    width: 20px; /* Ustalanie szerokości checkboxa */
+    height: 20px; /* Ustalanie wysokości checkboxa */
+    margin-left: 10px;
+}
+
+.btn-submit {
+
+    background-color: #be00ff;
+    cursor: pointer;
+}
+
+.btn {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background-color: #ca00ff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    display: block;
+    text-align: center;
+
+}
+
+.btn-results {
+    position: fixed; /* Utrzymuje przycisk w dolnym prawym rogu */
+    right: 20px;
+    bottom: 20px;
+    background-color: #333;
+    color: white;
+    padding: 20px 40px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 1em;
+    display: block;
+    text-align: center;
+}
+
+.btn-results:hover {
+    background-color: #d745ff;
+}
+
+.btn:hover {
+    background-color: #bf00ff;
+}
+
+h1 {
+    color: #dec4ff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Styl dla strony wyboru kolekcji */
+.select-collection-container {
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 50%; /* Dostosuj szerokość kontenera według potrzeb */
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Lekki efekt glow dla czytelności */
+}
+
+.select-collection-container h1 {
+    font-size: 24px; /* Zwiększenie rozmiaru tytułu */
+    color: #FFF; /* Ustawienie koloru tytułu */
+    margin-bottom: 20px; /* Odstęp pod nagłówkiem */
+}
+
+.select-collection-container ul {
+    list-style-type: none; /* Usunięcie kropek z listy */
+    padding: 0;
+    margin: 0;
+}
+
+.select-collection-container li {
+    font-size: 18px; /* Zwiększenie rozmiaru tekstu */
+    padding: 10px; /* Dodanie paddingu dla lepszego odstępu */
+    border-bottom: 1px solid #555; /* Subtelna linia oddzielająca */
+}
+
+.select-collection-container li a {
+    color: #a627fd; /* Jasnoniebieski kolor linków dla lepszej widoczności */
+    text-decoration: none; /* Brak podkreślenia */
+}
+
+.select-collection-container li a:hover {
+    color: #FFD700; /* Zmiana koloru na złoty przy najechaniu */
+    text-decoration: underline; /* Podkreślenie dla lepszego zaznaczenia */
+}
