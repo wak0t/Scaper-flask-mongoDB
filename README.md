@@ -1,40 +1,48 @@
-# Scraper Project
+# eBay Scraper Project
 
 ## Description
-Scraper is a Flask application that allows users to scrape data from eBay and store it in a MongoDB database. It also enables filtering of results based on price and sorting options.
+The `eBay Scraper` project is designed to retrieve product data from the eBay platform based on defined search criteria. The application is written in Python, using the Flask framework, and communicates with a MongoDB database that stores the scraping results.
 
 ## Features
-- Scraping data from eBay.
-- Saving results in MongoDB.
-- Filtering results by price and sorting.
+- Search for products on eBay according to criteria such as price, product name, and shipping options.
+- Save search results to a MongoDB database.
+- Filter saved results based on price and other options.
 
 ## Technologies
-- Python
+- Python 3.12
 - Flask
 - MongoDB
-- BeautifulSoup
+- Docker
+- BeautifulSoup4
+- PyMongo
 
 ## Installation
 To run the project locally, follow these steps:
 
 1. Clone the repository:
 
-git clone https://github.com/wak0t/Scraper-flask-mongoDB
+	https://github.com/wak0t/Scraper-flask-mongoDB
 
-2. Install dependencies:
+2. Install the required dependencies:
 
-pip install -r requirements.txt
+	pip install -r requirements.txt
 
-3. Start the Flask server:
 
-python run.py
+3. Run the MongoDB and Flask servers using Docker Compose:
 
-or
+	docker-compose up --build
 
-py run.py
+
+## Usage
+
+To use the application, go to your web browser and enter the address:
+	
+	http://localhost:5000/
+
 
 ## License
-The project is made available under the MIT License. Details can be found in the `LICENSE` file.
+
+This project is available under the MIT license.
 
 ## Authors
 - wak0t
